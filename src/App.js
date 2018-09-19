@@ -5,7 +5,7 @@ import Featured from './components/featured';
 
 import Header from './components/header_footer/Header';
 // import Featured from './components/featured';
-// import VunueNfo from './components/venueNfo';
+import VunueNfo from './components/venueNfo';
 // import Highlight from './components/Highlights';
 // import Pricing from './components/pricing';
 // import Location from './components/location';
@@ -17,6 +17,7 @@ class App extends Component {
       <div className='App' style={{ height:'1500px', background:'lightblue'}}>
         <Header/>
         <Featured/>
+        <VunueNfo/>
       </div>
     );
   }
