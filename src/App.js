@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
 import './resources/styles.css';
 
-import Featured from './components/featured';
 
 import Header from './components/header_footer/Header';
-// import Featured from './components/featured';
+import Featured from './components/featured';
 import VunueNfo from './components/venueNfo';
 import Highlight from './components/Highlights';
 import Pricing from './components/pricing';
-// import Location from './components/location';
+import Location from './components/Location';
 // import Footer from './components/header_footer/Footer';
 
 class App extends Component {
@@ -20,6 +19,7 @@ class App extends Component {
         <VunueNfo/>
         <Highlight/>
         <Pricing/>
+        <Location/>
       </div>
     );
   }
