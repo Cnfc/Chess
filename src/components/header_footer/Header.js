@@ -20,6 +20,19 @@ class Header extends Component {
   }
 
 
+  handleScroll = () => {
+     if(window.scrollY > 0){
+          this.setState({
+              headerShow: true
+          })
+     } else {
+          this.setState({
+              headerShow: false
+          })
+     }
+  }
+
+
   toggleDrawer = (value) => {
     this.setState({
       drawerOpen: value
@@ -49,7 +62,7 @@ class Header extends Component {
           color='inherit'
           onClick={() => this.toggleDrawer(true)}
           >
-          <MenuIcon></MenuIcon>
+          <MenuIcon/>
         </IconButton>
 
         <SideDrawer
